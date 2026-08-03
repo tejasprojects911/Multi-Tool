@@ -161,7 +161,7 @@ function switchView(viewName) {
       break;
     case 'tools':
       updatePageSEO(
-        'Financial Tools Directory | 150+ Free Calculators - checkmyresources.com',
+        'Tools | 150+ Free Calculators - checkmyresources.com',
         'Explore our complete directory of 150+ online financial calculators for loans, investments, taxes, real estate, and crypto on checkmyresources.com.'
       );
       break;
@@ -412,7 +412,7 @@ function openCalculatorView(calcId) {
   container.innerHTML = `
     <div class="calc-page-header">
       <button class="btn-back-tools" onclick="window.location.hash='tools'">
-        &larr; Back to Tools Directory
+        &larr; Back to Tools
       </button>
       <button class="btn-bookmark ${state.bookmarks.includes(calc.id) ? 'bookmarked' : ''}" onclick="toggleBookmark('${calc.id}', event)">
         ${state.bookmarks.includes(calc.id) ? 'Saved' : 'Save Tool'}
